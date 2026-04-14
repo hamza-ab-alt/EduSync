@@ -1,1 +1,5 @@
 CREATE DATABASE educsync;
+CREATE TABLE  roles(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    label VARCHAR (255)
+);
