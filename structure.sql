@@ -6,7 +6,7 @@ CREATE TABLE  roles(
 CREATE TABLE users(
     id INT PRIMARY KEY AUTO_INCREMENT ,
     firstname VARCHAR(255) NOT NULL,
-    lastname VARCHAR (255) NOT NULL,
+    lasetname VARCHAR (255) NOT NULL,
     email VARCHAR (255) UNIQUE ,
     password VARCHAR(255) NOT NULL,
   role_id INT,
@@ -46,3 +46,4 @@ CREATE TABLE enrollments (
 ALTER TABLE students CHANGE darofbirth dateofbirth DATE;
 ALTER TABLE students ADD CONSTRAINT unique_student_user UNIQUE (user_id);
 ALTER TABLE enrollments ADD CONSTRAINT unique_registration UNIQUE (student_id, course_id);
+
