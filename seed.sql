@@ -11,3 +11,7 @@ INSERT INTO users (firstname, lastename, email, password, role_id) VALUES
 ('Laila', 'Mansouri', 'laila.stud@gmail.com', 'stud123', 3),
 ('Anas', 'Bennani', 'anas.stud@gmail.com', 'stud123', 3),
 ('Zineb', 'Rami', 'zineb.stud@gmail.com', 'stud123', 3);
+INSERT INTO classes (name, classeroom_numb) VALUES 
+('JavaScript', 101), ('Python ', 102), ('php', 201), ('java', 202), ('c++', 301);
+
+
