@@ -35,4 +35,7 @@ JOIN roles  ON users.role_id = roles.id;
 SELECT users.firstname, users.lastename, classes.name AS class_name
 FROM students 
 JOIN users  ON students.user_id = users.id
-JOIN classes  ON students.class_id = classes.id;
+JOIN classes  ON students.class_id = classes.id; 
+SELECT courses.title AS course_title, users.firstname AS professor_name, users.lastename AS professor_surname
+FROM courses 
+JOIN users  ON courses.professor_id = users.id;
