@@ -32,3 +32,7 @@ INSERT INTO enrollments (student_id, course_id, status) VALUES
 SELECT users.firstname, users.lastename, roles.label AS role_name
 FROM users 
 JOIN roles  ON users.role_id = roles.id;
+SELECT users.firstname, users.lastename, classes.name AS class_name
+FROM students 
+JOIN users  ON students.user_id = users.id
+JOIN classes  ON students.class_id = classes.id;
