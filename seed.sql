@@ -17,4 +17,12 @@ INSERT INTO students (dateofbirth, student_numb, user_id, class_id) VALUES
 ('2004-05-12', 2026001, 5, 1), ('2003-08-22', 2026002, 6, 1),
 ('2005-01-10', 2026003, 7, 2), ('2004-11-30', 2026004, 8, 3),
 ('2003-03-15', 2026005, 9, 4), ('2004-07-20', 2026006, 10, 5);
+INSERT INTO courses (title, description, total_hours, professor_id) VALUES 
+('React JS', 'Modern Frontend Development', 40, 1),
+('Node.js Backend', 'Scalable server-side apps', 35, 1),
+('Deep Learning', 'Neural networks and AI', 60, 2),
+('Ethical Hacking', 'Securing networks', 50, 3),
+('Figma Pro', 'Advanced prototyping', 20, 4),
+('SQL Optimization', 'Advanced database management', 25, 2);
+
 
