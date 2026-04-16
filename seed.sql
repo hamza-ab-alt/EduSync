@@ -24,5 +24,8 @@ INSERT INTO courses (title, description, total_hours, professor_id) VALUES
 ('Ethical Hacking', 'Securing networks', 50, 3),
 ('Figma Pro', 'Advanced prototyping', 20, 4),
 ('SQL Optimization', 'Advanced database management', 25, 2);
-
+INSERT INTO enrollments (student_id, course_id, status) VALUES 
+(31, 1, 'Active'), (36, 2, 'Active'), (33, 1, 'Completed'),
+(33, 3, 'Active'), (35, 6, 'Active'), (33, 4, 'Dropped'),
+(32, 5, 'Active'), (34, 1, 'Active'), (32, 6, 'Completed');
 
