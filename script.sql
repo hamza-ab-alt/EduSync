@@ -17,3 +17,12 @@ CREATE TABLE classes (
     name VARCHAR(255),
     classeroom_numb INT
 );
+CREATE TABLE students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    darofbirth DATE,
+    student_numb INT,
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    class_id INT ,
+    FOREIGN KEY (class_id) REFERENCES classes(id)
+);
