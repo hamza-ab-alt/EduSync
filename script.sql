@@ -34,3 +34,12 @@ CREATE TABLE courses(
     professor_id INT,
     FOREIGN KEY (professor_id) REFERENCES users(id)
 );
+CREATE TABLE enrollments (
+    id INT  PRIMARY KEY AUTO_INCREMENT,
+    enrolled_at DATE,
+    status VARCHAR (255),
+    student_id INT,
+    FOREIGN KEY (student_id) REFERENCES students(id),
+    course_id INT,
+    FOREIGN KEY(course_id) REFERENCES courses(id)
+);
