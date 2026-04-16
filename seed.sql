@@ -29,3 +29,6 @@ INSERT INTO enrollments (student_id, course_id, status) VALUES
 (33, 3, 'Active'), (35, 6, 'Active'), (33, 4, 'Dropped'),
 (32, 5, 'Active'), (34, 1, 'Active'), (32, 6, 'Completed');
 
+SELECT users.firstname, users.lastename, roles.label AS role_name
+FROM users 
+JOIN roles  ON users.role_id = roles.id;
