@@ -13,5 +13,8 @@ INSERT INTO users (firstname, lastename, email, password, role_id) VALUES
 ('Zineb', 'Rami', 'zineb.stud@gmail.com', 'stud123', 3);
 INSERT INTO classes (name, classeroom_numb) VALUES 
 ('JavaScript', 101), ('Python ', 102), ('php', 201), ('java', 202), ('c++', 301);
-
+INSERT INTO students (dateofbirth, student_numb, user_id, class_id) VALUES 
+('2004-05-12', 2026001, 5, 1), ('2003-08-22', 2026002, 6, 1),
+('2005-01-10', 2026003, 7, 2), ('2004-11-30', 2026004, 8, 3),
+('2003-03-15', 2026005, 9, 4), ('2004-07-20', 2026006, 10, 5);
 
