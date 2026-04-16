@@ -39,3 +39,8 @@ JOIN classes  ON students.class_id = classes.id;
 SELECT courses.title AS course_title, users.firstname AS professor_name, users.lastename AS professor_surname
 FROM courses 
 JOIN users  ON courses.professor_id = users.id;
+SELECT users.firstname AS student, courses.title AS course, enrollments.status
+FROM enrollments 
+JOIN students  ON enrollments.student_id = students.id
+JOIN users  ON students.user_id = users.id
+JOIN courses  ON enrollments.course_id = courses.id;
