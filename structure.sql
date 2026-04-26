@@ -1,4 +1,5 @@
 CREATE DATABASE educsync;
+USE educsync;
 CREATE TABLE  roles(
     id INT PRIMARY KEY AUTO_INCREMENT,
     label VARCHAR (255)
@@ -19,7 +20,7 @@ CREATE TABLE classes (
 );
 CREATE TABLE students (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    darofbirth DATE,
+    datofbirth DATE,
     student_numb INT,
     user_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id),
